@@ -35,7 +35,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       args: "-p 9505:9505"
     d.run "cms-web",
       image: "xibosignage/xibo-cms-dev:latest",
-      args: "-p 80:80 -e XIBO_DEV_MODE=true -v /data/web:/var/www/cms -v /data/backup:/var/www/backup --link cms-db:mysql --link cms-xmr:50001"
+      args: "-p 8088:80 -e XIBO_DEV_MODE=true -v /data/web:/var/www/cms -v /data/backup:/var/www/backup --link cms-db:mysql --link cms-xmr:50001"
   end
 
   # Run a shell provisioner to restart the docker cms-web container (to map the shared folder correctly)
