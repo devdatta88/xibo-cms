@@ -1,0 +1,7 @@
+{
+  "title": "Forecast SAFAR Weather Module",
+  "author": "Securiace Technologies",
+  "description": "A module for displaying weather information. Uses the Forecast API",
+  "name": "forecastsafar",
+  "class": "Xibo\\Custom\\ForecastSafar"
+}

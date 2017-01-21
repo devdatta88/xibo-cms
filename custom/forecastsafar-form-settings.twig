@@ -1,0 +1,20 @@
+{#
+/*
+ * Securiace Technologies - http://www.securiace.com
+ * Copyright (C) 2017 Securiace Technologies
+ * (${FILE_NAME})
+ */
+
+#}
+{% extends "module-form-settings.twig" %}
+{% import "forms.twig" as forms %}
+
+{% block moduleFormFields %}
+    {% set title %}{% trans "API Key" %}{% endset %}
+    {% set helpText %}{% trans "Enter your API Key from SAFAR." %}{% endset %}
+    {{ forms.input("apiKey", title, module.getSetting("apiKey"), helpText, "", "required") }}
+
+    {% set title %}{% trans "Cache Period" %}{% endset %}
+    {% set helpText %}{% trans "Enter the number of seconds you would like to cache long/lat requests for. SAFAR offers 1000 requests a day." %}{% endset %}
+    {{ forms.input("cachePeriod", title, module.getSetting("cachePeriod"), helpText, "", "required") }}
+{% endblock %}
