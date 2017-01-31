@@ -1,5 +1,5 @@
 <?php
-/*
+z/*
  * Xibo - Digital Signage - http://www.xibo.org.uk
  * Copyright (C) 2006-2015 Daniel Garner
  *
